@@ -19,6 +19,9 @@ jobs:
         repository: hishamfazlie/sample-node-project
         path: .github/workflows/main.yml@master
 
+    - name: Pull Docker image from GitHub Container Registry
+      run: docker pull ghcr.io/hishamfazlie/node-staging:latest
+      
     - name: Login to Docker Hub
       run: echo "${{ secrets.DOCKER_HUB_TOKEN }}" | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
 
