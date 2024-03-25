@@ -17,4 +17,4 @@ jobs:
       uses: actions/checkout@v2
       
     - name: Use main work flow to build the docker image
-      uses: sample-node-project/.github/workflows/main.yml@master
+      uses: ./.github/workflows/main.yml
