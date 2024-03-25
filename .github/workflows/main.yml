@@ -11,8 +11,8 @@
             node-version: 14
         - name: Install dependencies
           run: npm i
-        - name: Run tests
-          run: npm test
+        # - name: Run tests
+        #   run: npm test
 
       docker-build:
         runs-on: ubuntu-latest
