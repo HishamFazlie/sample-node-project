@@ -16,7 +16,7 @@ jobs:
     - name: Use main work flow to build the docker image
       uses: actions/checkout@v2
       with:
-        repository: sample-node-project
+        repository: hishamfazlie/sample-node-project
         path: .github/workflows/main.yml@master
 
     - name: Login to Docker Hub
