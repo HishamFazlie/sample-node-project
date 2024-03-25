@@ -29,4 +29,4 @@
             context: .
             file: Dockerfile
             push: true
-            tags: your_docker_hisham17785/node_pr:latest
+            tags: hisham17785/node_pr:latest
