@@ -32,4 +32,4 @@
             context: .
             file: Dockerfile
             push: true
-            tags: ghcr.io/${{ github.repository_owner }}/nodetest:latest
+            tags: ghcr.io/hisham/nodetest:latest
