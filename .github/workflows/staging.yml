@@ -14,4 +14,4 @@ jobs:
     
     steps:
     - name: Use main work flow to build the docker image
-      uses: ./.github/workflows/main.yml@master
+      uses: ./.github/workflows/main.yml
