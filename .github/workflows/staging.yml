@@ -24,6 +24,8 @@ jobs:
   #       path: .github/workflows/main-workflow-1.yml
   job1:
     uses: HishamFazlie/workflows/.github/workflows/main-workflow-1.yml@main
+    with:
+      node-version: '18'
   
 
 
