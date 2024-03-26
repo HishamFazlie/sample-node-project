@@ -15,11 +15,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-      with:
+
+    - name: Call Workflow from centralised workflows 
+      uses: hishamfazlie/workflows/.github/workflows/main.yml@master
+      # with:
         # repository: hishamfazlie/sample-node-project
         # path: .github/workflows/main.yml
-        repository: hishamfazlie/workflows
-        path: .github/workflows/main.yml
+        # repository: hishamfazlie/workflows
+        # path: .github/workflows/main.yml
       
     # - name: Use main work flow to build the docker image
     #   uses: ./.github/workflows/main.yml
