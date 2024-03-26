@@ -18,6 +18,8 @@ jobs:
 
   call-workflow:
       uses: hishamfazlie/workflows/.github/workflows/main-workflow-1.yml@main
+      with:
+        node-version: '18.3'
 
     # - name: Call Workflow from centralised workflows 
     #   uses: hishamfazlie/workflows/.github/workflows/main.yml@master
