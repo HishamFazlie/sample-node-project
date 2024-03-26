@@ -11,17 +11,20 @@ on:
 
 
 jobs:
-  build_and_deploy:
-    runs-on: ubuntu-latest
+  # build_and_deploy:
+  #   runs-on: ubuntu-latest
   
     
-    steps:
-    - name: Checkout code and build
-      uses: actions/checkout@v2
-      with:
-        repository: HishamFazlie/workflows
-        ref: main
-        path: .github/workflows/main-workflow-1.yml
+  #   steps:
+  #   - name: Checkout code and build
+  #     uses: actions/checkout@v2
+  #     with:
+  #       repository: HishamFazlie/workflows
+  #       ref: main
+  #       path: .github/workflows/main-workflow-1.yml
+  job1:
+    uses: HishamFazlie/workflows/.github/workflows/main-workflow-1.yml@main
+  
 
 
     # - name: Call Workflow from centralised workflows 
