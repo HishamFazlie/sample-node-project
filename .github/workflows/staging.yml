@@ -11,18 +11,17 @@ on:
 
 
 jobs:
-  # build_and_deploy:
-  #   runs-on: ubuntu-latest
+  build_and_deploy:
+    runs-on: ubuntu-latest
   
     
-  #   steps:
-  #   - name: Checkout code
-  #     uses: actions/checkout@v2
-
-  call-workflow:
-      uses: hishamfazlie/workflows/.github/workflows/main-workflow-1.yml@main
+    steps:
+    - name: Checkout code and build
+      uses: actions/checkout@v2
       with:
-        node-version: '18.3'
+        repository: hishamfazlie/workflows
+        path: .github/workflows/main.yml
+
 
     # - name: Call Workflow from centralised workflows 
     #   uses: hishamfazlie/workflows/.github/workflows/main.yml@master
