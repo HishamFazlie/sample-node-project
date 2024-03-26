@@ -19,7 +19,7 @@ jobs:
     - name: Checkout code and build
       uses: actions/checkout@v2
       with:
-        repository: hishamfazlie/workflows
+        repository: HishamFazlie/workflows
         ref: main
         path: .github/workflows/main-workflow-1.yml
 
