@@ -2,40 +2,11 @@ name: Caller Workflow
 
 on: 
   workflow_dispatch:
-  push: 
-    branches:
-    - staging
-  pull_request:
-    branches:
-    - staging
 
 
 jobs:
-  # build_and_deploy:
-  #   runs-on: ubuntu-latest
-  
-    
-  #   steps:
-  #   - name: Checkout code and build
-  #     uses: actions/checkout@v2
-  #     with:
-  #       repository: HishamFazlie/workflows
-  #       ref: main
-  #       path: .github/workflows/main-workflow-1.yml
+
   job1:
     uses: HishamFazlie/workflows/.github/workflows/main-workflow-1.yml@main
     with:
       node-version: '18'
-  
-
-
-    # - name: Call Workflow from centralised workflows 
-    #   uses: hishamfazlie/workflows/.github/workflows/main.yml@master
-      # with:
-        # repository: hishamfazlie/sample-node-project
-        # path: .github/workflows/main.yml
-        # repository: hishamfazlie/workflows
-        # path: .github/workflows/main.yml
-      
-    # - name: Use main work flow to build the docker image
-    #   uses: ./.github/workflows/main.yml
