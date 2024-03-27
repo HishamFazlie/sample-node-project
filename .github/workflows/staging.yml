@@ -16,5 +16,4 @@ jobs:
     uses: HishamFazlie/workflows/.github/workflows/main-workflow-1.yml@main
     with:
       node-version: '18'
-    secrets: 
-      envPAT: ${{ secrets.envPAT }}
+    secrets: inherit
