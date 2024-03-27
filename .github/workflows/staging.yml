@@ -10,7 +10,6 @@ on:
     - staging
 
 
-
 jobs:
 
   job1:
